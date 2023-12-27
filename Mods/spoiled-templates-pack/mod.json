@@ -1,0 +1,28 @@
+{
+	"name" : "Spoiled templates pack",
+	"description" : "Original VCMI default templates with spoiled terrain.<br><br>To play these templates, you need to enable the following mods:<br>1. New terrains pack (created by: Ben Yan, zeryss) <br>2. Asphalt terrain (created by: HOMM modding community)",
+	"author" : "luk3Z",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "luk3z [at] duck.com",
+	"version" : "1.0",
+	"modType" : "Templates",
+	"language" : "english",
+	"depends" :
+	[
+		"newtown-terrains",
+		"asphalt-terrain",
+	],
+
+	"compatibility" :
+	{
+		"min" : "1.4",
+	},
+
+	"changelog" :
+    {
+        "1.0"   : [ "Initial release" ]
+    },
+
+	"keepDisabled" : true,
+}

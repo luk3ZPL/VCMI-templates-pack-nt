@@ -1,0 +1,28 @@
+{
+	"name" : "Winter templates pack",
+	"description" : "Original VCMI default templates with winter scenery.<br><br>To play these winter templates, you need to enable the following mods:<br>1. New terrains pack (created by: Ben Yan, zeryss) <br>2. Towns new views (created by: Zachari, J.M.Sower, Trith, Toffi, macron1, avatar)",
+	"author" : "luk3Z",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "luk3z [at] duck.com",
+	"version" : "1.0",
+	"modType" : "Templates",
+	"language" : "english",
+	"depends" :
+	[
+		"newtown-terrains",
+		"towns-new-views",
+	],
+
+	"compatibility" :
+	{
+		"min" : "1.4",
+	},
+
+	"changelog" :
+    {
+        "1.0"   : [ "Initial release" ]
+    },
+
+	"keepDisabled" : true,
+}

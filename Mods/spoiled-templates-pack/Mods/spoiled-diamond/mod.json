@@ -1,0 +1,15 @@
+{
+	"name" : "Spoiled Diamond",
+	"description" : "Added a new terrainTypes for unmodded template.",
+	"author" : "luk3Z",
+    "licenseName" : "Creative Commons Attribution-ShareAlike",
+    "licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "",
+	"version" : "1.0",
+	"modType" : "Templates",
+	"keepDisabled" : false,
+	"templates" :
+	[
+		"spoiled-diamond.json"
+	]
+}

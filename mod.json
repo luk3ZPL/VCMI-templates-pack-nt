@@ -1,0 +1,23 @@
+{
+	"name" : "Templates pack NT",
+	"description" : "Original VCMI default templates with new terrains (NT).<br><br>To play these templates, you need to enable the following mods:<br>1. New terrains pack (created by: Ben Yan, zeryss)<br>2. Towns new views (created by: Zachari, J.M.Sower, Trith, Toffi, macron1, avatar)<br>3. Horn of the Abyss/Wasteland terrain submod (by Hota Crew, ported by VCMI Team)<br>4. Pavilion Town/Dunes terrain submod (by edeksumo, lillith)<br>5. Asphalt terrain (created by: HOMM modding community)",
+	"author" : "luk3Z",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "luk3z [at] duck.com",
+	"version" : "1.0",
+	"modType" : "Templates",
+	"language" : "english",
+
+	"compatibility" :
+	{
+		"min" : "1.4",
+	},
+
+	"changelog" :
+    {
+        "1.0"   : [ "Initial release" ],
+    },
+
+	"keepDisabled" : true,
+}

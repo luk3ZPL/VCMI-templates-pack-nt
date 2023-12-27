@@ -1,0 +1,28 @@
+{
+	"name" : "Desert templates pack",
+	"description" : "Original VCMI default templates with desert scenery.<br><br>To play these templates, you need to enable the following mods:<br>1. Horn of the Abyss/Wasteland terrain submod (by Hota Crew, ported by VCMI Team) <br>2. Pavilion Town/Dunes terrain submod (by edeksumo, lillith)",
+	"author" : "luk3Z",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
+	"contact" : "luk3z [at] duck.com",
+	"version" : "1.0",
+	"modType" : "Templates",
+	"language" : "english",
+	"depends" :
+	[
+		"hota.wastelandterrain",
+		"new-pavilion.dunes-terrain",
+	],
+
+	"compatibility" :
+	{
+		"min" : "1.4",
+	},
+
+	"changelog" :
+    {
+        "1.0"   : [ "Initial release" ]
+    },
+
+	"keepDisabled" : true,
+}
