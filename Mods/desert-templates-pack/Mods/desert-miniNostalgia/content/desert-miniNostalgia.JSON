@@ -54,6 +54,8 @@
 				"size" : 40,
 				"owner" : 3,
 				"monsters" : "normal",
+				"terrainTypes" : [ "dunes", "wasteland" ],
+				"matchTerrainToTown" : false,
 				"playerTowns" : { "castles" : 1 },
 				"minesLikeZone" : 1,
 				"treasureLikeZone" : 1
