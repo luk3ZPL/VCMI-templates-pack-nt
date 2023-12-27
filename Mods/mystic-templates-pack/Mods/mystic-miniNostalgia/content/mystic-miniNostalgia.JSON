@@ -54,6 +54,7 @@
 				"size" : 40,
 				"owner" : 3,
 				"monsters" : "normal",
+				"terrainTypes" : [ "heatherThicket", "stardust" ],
 				"playerTowns" : { "castles" : 1 },
 				"minesLikeZone" : 1,
 				"treasureLikeZone" : 1
