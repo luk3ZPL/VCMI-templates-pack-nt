@@ -55,6 +55,7 @@
 				"owner" : 3,
 				"monsters" : "normal",
 				"terrainTypes" : [ "heatherThicket", "stardust" ],
+				"matchTerrainToTown" : false,
 				"playerTowns" : { "castles" : 1 },
 				"minesLikeZone" : 1,
 				"treasureLikeZone" : 1
