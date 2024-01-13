@@ -5,7 +5,7 @@
 	"licenseName" : "Creative Commons Attribution-ShareAlike",
 	"licenseURL" : "https://creativecommons.org/licenses/by-sa/4.0/",
 	"contact" : "luk3z [at] duck.com",
-	"version" : "1.0",
+	"version" : "1.1",
 	"modType" : "Templates",
 	"language" : "english",
 
@@ -17,6 +17,7 @@
 	"changelog" :
     {
         "1.0"   : [ "Initial release" ],
+		"1.1"   : [ "Added support for a new terrains in the Towns new views mod" ],
     },
 
 	"keepDisabled" : true,

@@ -1,0 +1,107 @@
+{
+	"core:stronghold" : {
+        "town" : {
+            "mapObject" : {
+                "filters" : {
+
+                    "village_1": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+                    "capitol" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],                                      
+                   
+                    "village_1_swamp": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_swamp": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_swamp": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_swamp": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_swamp" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_swamp" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_swamp" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_swamp" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+					
+                    "village_1_snow": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_snow": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_snow": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_snow": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_snow" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_snow" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_snow" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_snow" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+
+                    "village_1_icelands": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_icelands": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_icelands": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_icelands": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_icelands" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_icelands" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_icelands" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_icelands" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+                  
+                    "village_1_grass": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_grass": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_grass": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_grass": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_grass" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_grass" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_grass" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_grass" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+					
+					"capitol_lava" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+				},
+				
+                "templates" : {
+
+                    "village_1": {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "AVCSTRO0"},
+                    "village_2": {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "AVCSTRO0"},
+                    "village_3": {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "AVCSTRO0"},
+                    "village": {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "AVCSTRO0"},
+                    "fort" : {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "stronghold-rough/strongholdfort"},
+                    "citadel" : {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "stronghold-rough/strongholdcitadel"},
+                    "castle" : {"allowedTerrains":["dirt","lava","rough","sand","subterra"], "animation" : "stronghold-rough/strongholdcastle"},
+                    "capitol" : {"allowedTerrains":["dirt","rough","sand","subterra"], "animation" : "stronghold-rough/strongholdcapitol"},
+
+                    "village_1_swamp": {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdVillage"},
+                    "village_2_swamp": {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdVillage"},
+                    "village_3_swamp": {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdVillage"},
+                    "village_swamp": {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdVillage"},
+                    "fort_swamp" : {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdFort"},
+                    "citadel_swamp" : {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdCitadel"},
+                    "castle_swamp" : {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdCastle"},
+                    "capitol_swamp" : {"allowedTerrains":["swamp"], "animation" : "stronghold-swamp/swampStrongholdCapitol"}, 
+					
+                    "village_1_snow": {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdVillage"},
+                    "village_2_snow": {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdVillage"},
+                    "village_3_snow": {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdVillage"},
+                    "village_snow": {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdVillage"},
+                    "fort_snow" : {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdFort"},
+                    "citadel_snow" : {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdCitadel"},
+                    "castle_snow" : {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdCastle"},
+                    "capitol_snow" : {"allowedTerrains":["snow"], "animation" : "stronghold-snow/snowStrongholdCapitol"},
+
+                    "village_1_icelands": {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdVillage"},
+                    "village_2_icelands": {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdVillage"},
+                    "village_3_icelands": {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdVillage"},
+                    "village_icelands": {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdVillage"},
+                    "fort_icelands" : {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdFort"},
+                    "citadel_icelands" : {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdCitadel"},
+                    "castle_icelands" : {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdCastle"},
+                    "capitol_icelands" : {"allowedTerrains":["icelands"], "animation" : "stronghold-icelands/icelandsStrongholdCapitol"},
+					
+                    "village_1_grass": {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdVillage"},
+                    "village_2_grass": {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdVillage"},
+                    "village_3_grass": {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdVillage"},
+                    "village_grass": {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdVillage"},
+                    "fort_grass" : {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdFort"},
+                    "citadel_grass" : {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdCitadel"},
+                    "castle_grass" : {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdCastle"},
+                    "capitol_grass" : {"allowedTerrains":["grass"], "animation" : "stronghold-grass/grassStrongholdCapitol"},
+					
+					"capitol_lava" : {"allowedTerrains":["lava"], "animation" : "stronghold-lava/lavaStrongholdCapitol"},
+                }
+            }
+        }
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name" : "Towns new views fix",
+	"description" : "Added support for a new terrains in the Towns new views mod.",
+	"author" : "luk3Z",
+	"licenseName" : "Creative Commons Attribution-ShareAlike",
+	"licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+	"contact" : "",
+	"version" : "1.0",
+	"modType" : "Graphical",
+	"depends" :
+	[
+		"towns-new-views",
+		"newtown-terrains.icelandTerrain",
+		"newtown-terrains.deadlandterrain",
+		"newtown-terrains.spoiledLand",
+		"new-pavilion.dunes-terrain",
+		"hota.wastelandTerrain",
+		"asphalt-terrain",
+	],
+	"keepDisabled" : false,
+	"factions" : 
+	[ 
+		"config/castle.json",
+		"config/inferno.json",
+		"config/necropolis.json",
+		"config/stronghold.json",
+		"config/tower.json",
+	],
+}

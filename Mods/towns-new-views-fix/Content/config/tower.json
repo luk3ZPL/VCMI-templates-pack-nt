@@ -1,0 +1,67 @@
+{
+	"core:tower" : {
+        "town" : {
+            "mapObject" : {
+                "filters" : {
+
+                    "village_1": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+                    "capitol" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+
+                    "village_1_icelands": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_icelands": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_icelands": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_icelands": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_icelands" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_icelands" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_icelands" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+                    "capitol_icelands" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+                   
+                    "village_1_grass": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_grass": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_grass": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_grass": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_grass" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_grass" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_grass" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_grass" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+                },
+					
+                "templates" : {
+
+                    "village_1": {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "AVCTOWR0"},
+                    "village_2": {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "AVCTOWR0"},
+                    "village_3": {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "AVCTOWR0"},
+                    "village": {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "AVCTOWR0"},
+                    "fort" : {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "tower-snow/towerfort"},
+                    "citadel" : {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "tower-snow/towercitadel"},
+                    "castle" : {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "tower-snow/towercastle"},
+                    "capitol" : {"allowedTerrains":["dirt","snow","lava","rough","sand","swamp","subterra"], "animation" : "tower-snow/towercapitol"},
+
+                    "village_1_icelands": {"allowedTerrains":["icelands"], "animation" : "AVCTOWR0"},
+                    "village_2_icelands": {"allowedTerrains":["icelands"], "animation" : "AVCTOWR0"},
+                    "village_3_icelands": {"allowedTerrains":["icelands"], "animation" : "AVCTOWR0"},
+                    "village_icelands": {"allowedTerrains":["icelands"], "animation" : "AVCTOWR0"},
+                    "fort_icelands" : {"allowedTerrains":["icelands"], "animation" : "tower-icelands/icelandsTowerFort"},
+                    "citadel_icelands" : {"allowedTerrains":["icelands"], "animation" : "tower-icelands/icelandsTowerCitadel"},
+                    "castle_icelands" : {"allowedTerrains":["icelands"], "animation" : "tower-icelands/icelandsTowerCastle"},
+                    "capitol_icelands" : {"allowedTerrains":["icelands"], "animation" : "tower-icelands/icelandsTowerCapitol"},
+
+                    "village_1_grass": {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerVillage"},
+                    "village_2_grass": {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerVillage"},
+                    "village_3_grass": {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerVillage"},
+                    "village_grass": {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerVillage"},
+                    "fort_grass" : {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerFort"},
+                    "citadel_grass" : {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerCitadel"},
+                    "castle_grass" : {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerCastle"},
+                    "capitol_grass" : {"allowedTerrains":["grass"], "animation" : "tower-grass/grassTowerCapitol"},
+                }
+            }
+        }
+	}
+}

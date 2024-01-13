@@ -1,0 +1,67 @@
+{
+	"core:inferno" : {
+        "town" : {
+            "mapObject" : {
+                "filters" : {
+
+                    "village_1": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],
+                    "capitol" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],                                      
+                   
+                    "village_1_snow": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_snow": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_snow": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_snow": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_snow" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_snow" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_snow" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_snow" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+					
+                    "village_1_icelands": ["allOf",["villageHall"],["noneOf", [ "fort" ],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_2_icelands": ["allOf",["villageHall"],["tavern"],["noneOf", [ "fort" ],["blacksmith"],["mageGuild1"],["marketplace"],["townHall"]]]  ,               
+                    "village_3_icelands": ["allOf",["villageHall"],["tavern"],["blacksmith"],["mageGuild1"],["marketplace"],["noneOf", [ "fort" ],["townHall"]]]  ,   
+                    "village_icelands": ["allOf",["villageHall"],["tavern"],["marketplace"],["mageGuild1"],["townHall"],["noneOf", [ "fort" ]]  ],
+                    "fort_icelands" : [ "allOf", [ "fort" ], [ "noneOf", [ "citadel" ] ] ],
+                    "citadel_icelands" : [ "allOf", [ "citadel" ], [ "noneOf", [ "castle" ] ] ],
+                    "castle_icelands" : [ "allOf", [ "castle" ], [ "noneOf", [ "capitol" ] ] ],       
+                    "capitol_icelands" : [ "allOf", [ "castle"  ], [ "capitol"  ] ],
+                    },
+					
+                "templates" : {
+
+                    "village_1": {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "AVCINFT0"},
+                    "village_2": {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "AVCINFT0"},
+                    "village_3": {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "AVCINFT0"},
+                    "village": {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "AVCINFT0"},
+                    "fort" : {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "inferno-lava/infernofort"},
+                    "citadel" : {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "inferno-lava/infernocitadel"},
+                    "castle" : {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "inferno-lava/infernocastle"},
+                    "capitol" : {"allowedTerrains":["dirt","grass","lava","rough","sand","swamp","subterra"], "animation" : "inferno-lava/infernocapitol"},
+
+                    "village_1_snow": {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoVillage"},
+                    "village_2_snow": {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoVillage"},
+                    "village_3_snow": {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoVillage"},
+                    "village_snow": {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoVillage"},
+                    "fort_snow" : {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoFort"},
+                    "citadel_snow" : {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoCitadel"},
+                    "castle_snow" : {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoCastle"},
+                    "capitol_snow" : {"allowedTerrains":["snow"], "animation" : "inferno-snow/snowInfernoCapitol"},
+					
+                    "village_1_icelands": {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoVillage"},
+                    "village_2_icelands": {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoVillage"},
+                    "village_3_icelands": {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoVillage"},
+                    "village_icelands": {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoVillage"},
+                    "fort_icelands" : {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoFort"},
+                    "citadel_icelands" : {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoCitadel"},
+                    "castle_icelands" : {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoCastle"},
+                    "capitol_icelands" : {"allowedTerrains":["icelands"], "animation" : "inferno-icelands/icelandsInfernoCapitol"},
+                }
+            }
+        }
+	}
+}
